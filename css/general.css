@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* utility */
+
+.bold {font-weight: 700;}
+.flex {display: flex;}
+.text-s {font-size: 0.875rem;}
+.text-m {font-size: 1rem;}
+.text-l {font-size: 2rem;}
+
+/* layout */
+
+.container {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+main {
+  background-color: #FAFAFA;
+}
+
+/* typography */
+
+time,
+.header__link {
+  text-transform: uppercase;
+}
+
+.blogs article a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.3;
+}
+
+/* header */
+
+.header__nav {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__logo-wrapper {
+  align-items: center;
+  gap: 0.5em;
+}
+
+.header__logo-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header__list {
+  gap: 1.125em;
+}
+
+.header__link {
+  font-weight: 500;
+}
+
+/* hero */
+.hero__title {
+  font-size: 2rem;
+  margin: 0.3em 0;
+}
+
+.hero__text {
+  line-height: 1.5;
+}
+
+
+/* blogs */
+.mobile-hidden {
+  display: none;
+}
+
+.blogs {
+  display: grid;
+  grid-template-areas: 
+  "... ... ..."
+  "... one ..."
+  "... two ..."
+  "... tre ..."
+  "... tag ..."
+  "... ... ...";
+  gap: 2em 0;
+}
+
+.blog__one {grid-area: one;}
+.blog__two {grid-area: two;}
+.blog__three {grid-area: tre;}
+.blog__four {grid-area: fou;}
+
+.blog__time {
+  font-size: 0.875rem;
+  display: block;
+  margin-top: 0.75em;
+}
+
+.blog__img,
+.hero__img {
+  width: 100%;
+}
+
+.blog__title {
+  font-size: 1.25rem;
+  padding: 0.5em 0;
+}
+
+/* posts */
+
+.posts__title {
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  background-color: #202020;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 3em 0;
+}
+
+.footer__name {
+  color: #ECECEC;
+}
+
+.footer__cr {
+  color: #D7D7D7;
+}
+
+/* media */
+
+@media (min-width: 480px) {
+  .mobile-hidden {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 1.875em;
+    padding-right: 1.875em;
+  }
+
+  .text-s {
+    font-size: 1rem;
+  }
+
+  .text-m {
+    font-size: 1.25rem;
+  }
+
+  .header__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2.25em;
+    padding-right: 2.25em;
+  }
+
+  .text-s {
+    font-size: 1.125rem;
+  }
+
+  .text-m {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-s {
+    font-size: 1.375rem;
+  }
+
+  .text-m {
+    font-size: 1.75rem;
+  }
+
+  .text-l {
+    font-size: 2.25rem;
+  }
+
+  .header__nav {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+  }
+
+  .blogs {
+    margin-bottom: 2em;
+  }
+
+  .blog__time {
+    font-size: 1.125rem;
+  }
+
+  .blog__text,
+  .blog__link {
+    font-size: 1.25rem;
+  }
+}

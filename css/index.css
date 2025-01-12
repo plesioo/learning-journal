@@ -1,0 +1,94 @@
+/* layout */
+.hero {
+  width: 100%;
+}
+
+/* hero */
+
+.hero {
+  background: black url('../images/article-image-hero.png') center top / cover;
+}
+
+.hero__text-wrapper {
+  padding-top: 6em;
+  padding-bottom: 1em;
+  color: white;
+}
+
+.hero__text {
+  max-width: 600px;
+}
+
+/* blogs */
+.blogs {
+  grid-template-columns: 1.25em 1fr 1.25em;
+}
+
+.blog__five {grid-area: fiv;}
+.blog__six {grid-area: six;}
+.blog__link {
+  grid-area: tag;
+  text-align: center;
+  color: black;
+}
+
+/* Media */
+
+@media (min-width: 480px) {
+  .hero__text-wrapper {
+    padding-top: 14em;
+  }
+
+  .blogs {
+    grid-template-columns: 0em repeat(4, 1fr) 0em;
+    grid-template-areas: 
+    "... ... ... ... ... ..."
+    "... one one two two ..."
+    "... tre tre fou fou ..."
+    "... fiv fiv six six ..."
+    "... ... tag tag ... ..."
+    "... ... ... ... ... ...";
+    gap: 2em 1em;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__text {
+    font-size: 1.125rem;
+  }
+
+  .blogs {
+    column-gap: 1.875em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__text {
+    font-size: 1.25rem;
+  }
+
+  .hero__text-wrapper {
+    padding-top: 20em;
+    padding-bottom: 3em;
+  }
+  
+  .blogs {
+    grid-template-columns: 0em repeat(3, 1fr) 0em;
+    grid-template-areas: 
+    "... ... ... ... ..."
+    "... one two tre ..."
+    "... fou fiv six ..."
+    "... ... tag ... ..."
+    "... ... ... ... ...";
+    column-gap: 2.25em;
+  }
+}

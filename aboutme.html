@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/aboutme.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="flex container header__nav">
+      <div class="flex header__logo-wrapper">
+        <img src="images/icon.png" alt="" class="header__icon">
+        <span class="header__logo-text bold text-s"><a href="index.html">My learning journal</a></span>
+      </div>
+      <div>
+        <ul class="flex header__list">
+          <li><a href="index.html" class="header__link text-s">Home</a></li>
+          <li><a href="aboutme.html" class="header__link text-s">About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <img src="images/porfile-pic.png" alt="A man smiling." class="hero__profile-pic">
+      <div>
+        <h1 class="bold hero__title text-l">Hi there! My name is Roku and welcome to my learning journal.</h1>
+        <p class="hero__text text-s">
+          After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex content">
+      <h2 class="bold content__title text-m">How I stay committed to learning</h2>
+      <p class="content__text text-s">
+        I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.
+      </p>
+      <p class="content__text text-s">
+        While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.
+      </p>
+
+      <h2 class="bold content__title text-m">How I got started</h2>
+      <p class="content__text text-s">
+        I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.
+      </p>
+      <p class="content__text text-s">
+        That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.
+      </p>
+    </section>
+
+    <section class="posts">
+      <h2 class="bold posts__title text-m">Recent posts</h2>
+      <div class="blogs">
+        <article class="blog__one">
+          <a href="article.html" aria-labelledby="blog-title-1">
+            <img src="images/article-image-03.png" alt="Laptop displaying code." class="blog__img">
+            <time datetime="2022-07-23" class="blog__time">July 23, 2022</time>
+            <h2 id="blog-title-1" class="blog__title bold text-m">Blog one</h2>
+            <p class="blog__text">
+              I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.
+            </p>
+          </a>
+        </article>
+        <article class="blog__two">
+          <a href="article.html" aria-labelledby="blog-title-2">
+            <img src="images/article-image-02.png" alt="Light bulb hold up by a hand." class="blog__img">
+            <time datetime="2022-07-23" class="blog__time">July 23, 2022</time>
+            <h2 id="blog-title-2" class="blog__title bold text-m">Blog two</h2>
+            <p class="blog__text">
+              I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.
+            </p>
+          </a>
+        </article>
+        <article class="blog__three">
+          <a href="article.html" aria-labelledby="blog-title-3">
+            <img src="images/article-image-01.png" alt="Laptop screen displaying a portfolio website." class="blog__img">
+            <time datetime="2022-07-23" class="blog__time">July 23, 2022</time>
+            <h2 id="blog-title-3" class="blog__title bold text-m">Blog three</h2>
+            <p class="blog__text">
+              I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.
+            </p>
+          </a>
+        </article>
+        <article class="blog__four mobile-hidden">
+          <a href="article.html" aria-labelledby="blog-title-4">
+            <img src="images/article-image-04.png" alt="A woman posing on a sandy beach at sunset." class="blog__img">
+            <time datetime="2022-07-23" class="blog__time">July 23, 2022</time> 
+            <h2 id="blog-title-4" class="blog__title bold text-m">Blog four</h2>
+            <p class="blog__text">
+              I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.
+            </p>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="flex text-s">
+    <p class="footer__name bold">My learning Journal</p>
+    <p class="footer__cr">Copyright ©2025</p>
+  </footer>
+</body>
+</html>

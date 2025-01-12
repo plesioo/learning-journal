@@ -1,0 +1,53 @@
+/* content */
+
+.content {
+  flex-direction: column;
+  gap: 1.25em;
+  margin-bottom: 3em;
+}
+
+/* related posts section */
+
+.blogs {
+  grid-template-columns: 0em 1fr 0em;
+}
+
+@media (min-width: 480px) {
+  .blogs {
+    grid-template-columns: 0em 1fr 1fr 0em;
+    grid-template-areas: 
+    "... ... ... ..."
+    "... one two ..."
+    "... tre fou ..."
+    "... ... ... ...";
+    gap: 2em 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .blogs {
+    grid-template-columns: 0em repeat(3, 1fr) 0em;
+    grid-template-areas: 
+    "... ... ... ... ..."
+    "... one two tre ..."
+    "... ... ... ... ...";
+    column-gap: 1.5em;
+  }
+
+  .content {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content {
+    padding: 0 6em;
+    gap: 2em;
+    margin-bottom: 6em;
+  }
+}
