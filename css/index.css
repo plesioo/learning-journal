@@ -6,7 +6,10 @@
 /* hero */
 
 .hero {
-  background: black url('../images/article-image-hero.png') center top / cover;
+  background: black url('../images/article-image-hero.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
 }
 
 .hero__text-wrapper {
