@@ -1,5 +1,3 @@
-import { blogs } from "./data.js";
-
 setCopyrightDate();
 
 function setCopyrightDate() {
