@@ -55,7 +55,7 @@ body {
 }
 
 main {
-  background-color: #FAFAFA;
+  background-color: #D7EAE2;
 }
 
 /* typography */
@@ -81,6 +81,7 @@ p {
   padding-bottom: 1.25em;
   align-items: center;
   justify-content: space-between;
+  background: #EFFAF5;
 }
 
 .header__nav a {
@@ -163,7 +164,7 @@ p {
 /* footer */
 
 footer {
-  background-color: #202020;
+  background-color: #536557;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -241,7 +242,7 @@ footer {
   }
 
   .blogs {
-    margin-bottom: 2em;
+    padding-bottom: 2em;
   }
 
   .blog__time {
